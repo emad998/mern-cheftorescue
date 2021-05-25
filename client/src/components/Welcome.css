@@ -1,0 +1,17 @@
+.imageResponsive {
+    width: 100%;
+  height: auto;
+}
+
+.centeringText {
+    text-align: center;
+}
+
+.displaying {
+    display: flex;
+    justify-content: center;
+}
+
+.bordering {
+    border-radius: 50%;
+}
