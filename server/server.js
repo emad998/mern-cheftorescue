@@ -12,9 +12,9 @@ const { OAuth2Client } = require('google-auth-library')
 const client = new OAuth2Client('418479286522-kdaphilh80lfvodbnn8dnehv1htea6rp.apps.googleusercontent.com')
 require('dotenv').config()
 
+// `${process.env.MONGO_URI}`
 
-
-mongoose.connect(`${process.env.MONGO_URI}`, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
+mongoose.connect('mongodb://localhost/chef_to_rescue', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
 
 const userSchema = new mongoose.Schema({
     databaseEmail: String,
